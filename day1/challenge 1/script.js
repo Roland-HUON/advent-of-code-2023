@@ -4,6 +4,7 @@ let lines = content.split('\n'); // splits the content into lines
 let output = [];
 let total=[];
 for (let line of lines) { // iterates over each line
+    let output=[];
     let numbers = line.match(/\d+/g) || [];// gets all numbers in the line
     var Snumbers = numbers.toString();
     for (var i = 0, len = Snumbers.length; i < len; i += 1) {
